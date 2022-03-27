@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0c34bf28f2.js" crossorigin="anonymous"></script>
+    <link href="styles.css" rel="stylesheet">
+    <script src="./index.html"></script>
+    <title>Form</title>
+</head>
+<body>
+<div class="container">
+    <div class="image">
+        <img id="background" src="https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="">
+    </div>
+    <p><span class = "credit">Photo by Halie West on Unsplash</span></p>
+    <div class="logo">        
+        <img id="logo" src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="">
+        <h1>ODIN</h1>
+    </div>
+<div class="form-section">   
+    <div class="form">
+            <div class="heading">        
+                <p><strong>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br>Sign up <em>now</em> to get started.</strong></p>
+                <p><strong>You <em>know</em> you want to.</strong></p>
+            </div>
+            <form action="">
+                <legend>Let's do this!</legend>
+                    <fieldset>
+                        <div class="colOne">
+                                <label for="firstName">FIRST NAME</label>
+                                <input type="text" id="firstName" required>
+                                <label for="email">EMAIL</label>
+                                <input type="email" id="eMail" required>
+
+                                <label for="pass">PASSWORD</label>
+                                <input type="password" id="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                        <div class="error">   
+
+                        </div>                             
+                            </div>
+                            <div class="colTwo">
+                                <label for="lastName">LAST NAME</label>
+                                <input type="text" id="lastName" required>
+
+                                <label for="phoneNumber">PHONE NUMBER</label>
+                                <input type="number" id="phoneNumber">
+                                
+                                <label for="confirmPass">CONFIRM PASSWORD</label>
+                                <input type="password" id="confirmPassword" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                            </div>
+                            </div>
+                    </fieldset>
+                    <div class="signUpSection">    
+                        <button>Create Account</button>
+                        <a href="#">Already have an account? <span>Log in</span></a>
+                    </div>
+            </form>
+        
+        </div>
+        <div id="footer">
+            By: 
+            <a href="https://github.com/itsaflamingo" target="_blank">
+            itsaflamingo
+            <i class="fa-brands fa-github"></i>
+            </a>
+    </div>
+</div>
+</body>
+</html>

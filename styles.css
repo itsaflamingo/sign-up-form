@@ -1,0 +1,176 @@
+@font-face {
+    font-family: my-cool-font;
+    src: url(./font/Norse-Bold.otf);
+}
+body {
+    margin: 0;
+}
+.container {
+    height: 100vh;
+    display: flex;
+    background-color: rgb(245, 241, 241);
+}
+.form-section {
+    display: flex;
+    flex-direction: column;
+}
+.image {
+    background-size: cover;
+    position: absolute;
+}
+#logo, #background {
+    position: absolute;
+}
+#background {
+    background-size: cover;
+    height: 713px;
+    width: 400px;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    width: 400px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.514);
+    background-size: 30%;
+    background-repeat: repeat;
+    color: white;
+    top: 180px;
+}
+h1, #logo {
+    position: absolute;
+    color: white;
+    right: 150px;
+}
+#logo {
+    height: 120px;
+    left: 90px;
+}
+h1 {
+    left: 140px;
+    margin-left: 40px;
+    font-family: my-cool-font, norse;
+    font-size: 90px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 350px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+form input {
+    border: 0.5px solid #E5E7EB;
+    border-radius: 3px;
+}
+form {
+    height: 40vh;
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+    
+    background-color: white;
+    width: 1140px;
+    box-shadow: 0px 5px 5px rgb(212, 209, 209);
+
+}
+fieldset {
+    border: none;
+    display: flex;
+    gap: 150px;
+    justify-content: flex-start; 
+    align-items: center;
+    height: 35vh;
+    margin-left: 30px;
+}
+input, textarea, select, button {
+    width : 150px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+p {
+    text-align: left;
+    font-size: 20px;
+    margin-left: 45px;
+}
+.colOne, .colTwo {
+    display: flex;
+    flex-direction: column;
+}
+textarea, input {
+    height: 25px;
+    width: 250px;
+}
+input {
+  margin-bottom: 20px;  
+}
+legend {
+    font-size: 30px;
+    margin: 20px 40px;
+}
+label {
+    color: rgb(95, 93, 93);
+    font-weight: 900;
+    font-size: 12px;
+}
+.signUpSection {
+    margin-top: 30px;
+    gap: 30px;
+    margin-left: 400px;
+}
+input:focus {
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 0px 3px 3px rgb(212, 209, 209);
+}
+button {
+    height: 40px;
+    border-radius: 5px;
+    background-color: #596D48;
+    color: white;
+    font-weight: 900;
+    border: 1px solid #596D48;
+}
+button:hover {
+    background-color: #81b953;
+    border: 1px solid #81b953;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+span {
+    color: #596D48;
+    font-weight: 900;
+}
+.heading {
+    margin-bottom: 20px;
+}
+.credit {
+    color: white;
+    position: absolute;
+    font-size: 10px;
+    font-weight: 100;
+    top: 690px;
+    left: 140px;
+}
+input:required {
+    border: 1px solid red;
+}
+#footer {
+    position: absolute;
+    display: block;
+    top: 690px;
+    left: 560;
+}
+.fa-brands {
+    font-size: 20px;
+}
+
+
+
