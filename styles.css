@@ -6,75 +6,67 @@ body {
     margin: 0;
 }
 .container {
-    height: 100vh;
     display: flex;
     background-color: rgb(245, 241, 241);
 }
-.form-section {
-    display: flex;
-    flex-direction: column;
-}
-.image {
+/* side-hero design */
+.side-hero {
+    background: url(https://images.unsplash.com/photo-1505322022379-7c3353ee6291?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
     background-size: cover;
-    position: absolute;
-}
-#logo, #background {
-    position: absolute;
-}
-#background {
-    background-size: cover;
-    height: 713px;
-    width: 400px;
+    height: 100vh;
+    width: 30vw;
 }
 .logo {
+    background-color: rgba(0, 0, 0, 0.514);
     display: flex;
+    height: 150px;
     justify-content: center;
     align-items: center;
-    height: 130px;
-    width: 400px;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.514);
-    background-size: 30%;
-    background-repeat: repeat;
-    color: white;
-    top: 180px;
-}
-h1, #logo {
-    position: absolute;
-    color: white;
-    right: 150px;
+    margin: 180px 0;
 }
 #logo {
+    position: relative;
     height: 120px;
-    left: 90px;
 }
-h1 {
-    left: 140px;
-    margin-left: 40px;
+.logo > p {
     font-family: my-cool-font, norse;
-    font-size: 90px;
+    color: white;
+    font-size: 5rem;
 }
-.form {
+.side-hero > p {
+    bottom: 0px;
+    left: 100px;
+}
+.side-hero > p {
+    position: absolute;
+    color: white;
+}
+/* Form section */
+.form-section {
+    width: 70vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 350px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100;
 }
-form input {
-    border: 0.5px solid #E5E7EB;
-    border-radius: 3px;
-}
-form {
-    height: 40vh;
-    width: 100vh;
+/* Heading design */
+.heading {
     display: flex;
     flex-direction: column;
-    
+    margin-bottom: 20px;
+    flex: 0 1 70px;
+    font-size: 20px;
+    margin-left: 40px;
+}
+/* form design */
+form {
+    height: 40vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 2;
+    flex-grow: 2;
     
     background-color: white;
-    width: 1140px;
     box-shadow: 0px 5px 5px rgb(212, 209, 209);
 
 }
@@ -93,40 +85,27 @@ input, textarea, select, button {
     margin: 0;
     box-sizing: border-box;
 }
-p {
-    text-align: left;
-    font-size: 20px;
-    margin-left: 45px;
-}
 .colOne, .colTwo {
     display: flex;
     flex-direction: column;
+    flex-shrink: 1;
 }
 textarea, input {
     height: 25px;
     width: 250px;
-}
-input {
-  margin-bottom: 20px;  
-}
-legend {
-    font-size: 30px;
-    margin: 20px 40px;
+    display: flex;
+    flex-shrink: 1;
+    flex-grow: 1;
 }
 label {
     color: rgb(95, 93, 93);
     font-weight: 900;
     font-size: 12px;
 }
-.signUpSection {
-    margin-top: 30px;
-    gap: 30px;
-    margin-left: 400px;
-}
-input:focus {
-    outline: none;
-    border: 1px solid blue;
-    box-shadow: 0px 3px 3px rgb(212, 209, 209);
+form input {
+    border: 0.5px solid #E5E7EB;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 button {
     height: 40px;
@@ -136,41 +115,22 @@ button {
     font-weight: 900;
     border: 1px solid #596D48;
 }
-button:hover {
-    background-color: #81b953;
-    border: 1px solid #81b953;
+legend {
+    font-size: 30px;
+    margin: 20px 40px;
 }
-a {
-    text-decoration: none;
-    color: black;
+/* Sign Up Section */
+.signUpSection {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 30px;
+    margin-left: 40px;
 }
-span {
-    color: #596D48;
-    font-weight: 900;
-}
-.heading {
-    margin-bottom: 20px;
-}
-.credit {
-    color: white;
-    position: absolute;
-    font-size: 10px;
-    font-weight: 100;
-    top: 690px;
-    left: 140px;
-}
-input:required {
-    border: 1px solid red;
-}
+/* Footer */
 #footer {
     position: absolute;
     display: block;
-    top: 690px;
-    left: 560;
+    bottom: 15px;
+    left: 925px;
 }
-.fa-brands {
-    font-size: 20px;
-}
-
-
-
