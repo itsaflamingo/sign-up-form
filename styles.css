@@ -56,6 +56,11 @@ body {
     margin-left: 40px;
 }
 /* form design */
+.form-inner-section {
+    display: flex;
+    flex-direction: column;
+    flex: 0 2 auto;
+}
 form {
     height: 40vh;
     width: 70vw;
@@ -66,7 +71,6 @@ form {
     
     background-color: white;
     box-shadow: 0px 5px 5px rgb(212, 209, 209);
-
 }
 fieldset {
     border: none;
@@ -89,11 +93,9 @@ input, textarea, select, button {
     flex-shrink: 1;
 }
 textarea, input {
-    height: 25px;
+    height: 30px;
     width: 250px;
     display: flex;
-    flex-shrink: 1;
-    flex-grow: 1;
 }
 label {
     color: rgb(95, 93, 93);
@@ -102,8 +104,12 @@ label {
 }
 form input {
     border: 0.5px solid #E5E7EB;
-    border-radius: 10px;
-    margin-bottom: 10px;
+    border-radius: 5px; 
+}
+.colOne > div,
+.colTwo > div {
+    height: 10px;
+    margin: 5px;
 }
 button {
     height: 40px;
@@ -150,3 +156,7 @@ input:focus {
     bottom: 15px;
     left: 925px;
 }
+#cPasswordError, #passwordError {
+    color: red;
+}
+
