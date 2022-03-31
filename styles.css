@@ -23,6 +23,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 180px 0;
+    width: clamp(20px, 100%, 600px);
 }
 #logo {
     position: relative;
@@ -66,8 +67,7 @@ form {
     width: 70vw;
     display: flex;
     flex-direction: column;
-    flex-shrink: 2;
-    flex-grow: 2;
+    flex: 1;
     
     background-color: white;
     box-shadow: 0px 5px 5px rgb(212, 209, 209);
@@ -80,22 +80,23 @@ fieldset {
     align-items: center;
     height: 35vh;
     margin-left: 30px;
+    flex: 1;
 }
 input, textarea, select, button {
     width : 150px;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    width: clamp(100px, 20%, 600px);
 }
 .colOne, .colTwo {
     display: flex;
     flex-direction: column;
-    flex-shrink: 1;
 }
 textarea, input {
-    height: 30px;
-    width: 250px;
     display: flex;
+    width: clamp(100px, 150%, 600px);
+    height: 25px;
 }
 label {
     color: rgb(95, 93, 93);
@@ -159,4 +160,5 @@ input:focus {
 #cPasswordError, #passwordError {
     color: red;
 }
+
 
